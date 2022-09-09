@@ -3,6 +3,7 @@ import {
   ParticlesLoader,
   ColoredCircleSpinner,
   ColoredTripleSpinner,
+  AnimatedBlob,
 } from "Components";
 
 export const DB = [
@@ -21,5 +22,9 @@ export const DB = [
   {
     title: "QR Code",
     component: <QRCode />,
+  },
+  {
+    title: "Animated Blob",
+    component: <AnimatedBlob />,
   },
 ];
