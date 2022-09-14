@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Layout } from "Templates/Layout";
 import { BrowserRouter } from "react-router-dom";
 
