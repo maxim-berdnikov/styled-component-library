@@ -4,6 +4,8 @@ import {
   ColoredCircleSpinner,
   ColoredTripleSpinner,
   AnimatedBlob,
+  AnimatedCube,
+  Unfold,
 } from "Components";
 
 export const DB = [
@@ -26,5 +28,13 @@ export const DB = [
   {
     title: "Animated Blob",
     component: <AnimatedBlob />,
+  },
+  {
+    title: "Animated Cube",
+    component: <AnimatedCube />,
+  },
+  {
+    title: "Unfold",
+    component: <Unfold />,
   },
 ];

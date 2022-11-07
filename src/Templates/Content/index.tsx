@@ -1,6 +1,6 @@
 import React from "react";
 import { DB } from "DB";
-import './style.scss'
+import "./style.scss";
 
 export const Content = ({
   currentComponet,

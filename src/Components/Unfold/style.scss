@@ -1,0 +1,42 @@
+.unfold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2f364f;
+    overflow: hidden;
+    
+    .box {
+    width: 640px;
+    height: 360px;
+    transform: rotate(-25deg) skew(25deg);
+    transition: 0.5s;
+    display: flex;
+    
+    &:hover {
+        transform: rotate(-25deg) skew(-25deg) translateY(-20px);
+        
+        span:nth-child(odd) {
+            transform: skewY(25deg);
+            box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+        }
+        
+         span:nth-child(even) {
+            transform: skewY(-25deg);
+            box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+    span {
+        display: block;
+        width: 25%;
+        height: 100%;
+        background-color: #fff;
+        transition: 500ms
+    }
+}
+}
+
+// https://www.youtube.com/watch?v=9KwIE0t9Tkk
+
