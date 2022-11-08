@@ -1,4 +1,4 @@
-.wrapper {
+.animated-blob {
     position: relative;
     display: flex;
     justify-content: center;
@@ -6,9 +6,8 @@
     width: 100%;
     min-height: 100vh;
     background-color: #250821;
-  }
-  
-  .blob {
+    
+      &__blob {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -17,3 +16,5 @@
       filter: blur(50px);
     }
   }
+  }
+  

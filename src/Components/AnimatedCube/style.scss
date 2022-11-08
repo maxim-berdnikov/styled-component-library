@@ -9,9 +9,8 @@
   height: 100%;
   background-color: #1d0035;
   overflow: hidden;
-}
-
-.section {
+  
+  .section {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -20,21 +19,24 @@
   align-items: center;
   transform-style: preserve-3d;
   transform: perspective(700px);
-}
-
-.box {
+  
+  .box {
   position: absolute;
   top: 200px;
   transform-style: preserve-3d;
-}
-
-.box .cube {
+  
+  .cube {
   position: relative;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
   animation: aimateCube 20s linear infinite;
 }
+}
+}
+
+}
+
 
 @keyframes aimateCube {
   0% 

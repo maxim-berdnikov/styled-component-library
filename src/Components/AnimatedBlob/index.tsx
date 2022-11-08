@@ -3,8 +3,8 @@ import "./style.scss";
 
 export const AnimatedBlob = () => {
   return (
-    <section className="wrapper">
-      <div className="blob">
+    <section className="animated-blob">
+      <div className="animated-blob__blob">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#FF0066" transform="translate(100 100)">
             <animate
@@ -28,7 +28,7 @@ export const AnimatedBlob = () => {
       </div>
 
       {/* to glow effect  */}
-      <div className="blob">
+      <div className="animated-blob__blob">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#FF0066" transform="translate(100 100)">
             <animate
