@@ -6,6 +6,8 @@ import {
   AnimatedBlob,
   AnimatedCube,
   Unfold,
+  AnimatedLoader,
+  AnimatedDotLoader,
 } from "Components";
 
 export const DB = [
@@ -36,5 +38,13 @@ export const DB = [
   {
     title: "Unfold",
     component: <Unfold />,
+  },
+  {
+    title: "Animated Loader",
+    component: <AnimatedLoader />,
+  },
+  {
+    title: "Animated Dot Loader",
+    component: <AnimatedDotLoader />,
   },
 ];

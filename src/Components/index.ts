@@ -5,3 +5,5 @@ export { QRCode } from "Components/QRCode";
 export { AnimatedBlob } from "Components/AnimatedBlob";
 export { AnimatedCube } from "Components/AnimatedCube";
 export { Unfold } from "Components/Unfold";
+export { AnimatedLoader } from "Components/AnimatedLoader";
+export { AnimatedDotLoader } from "Components/AnimatedDotLoader";

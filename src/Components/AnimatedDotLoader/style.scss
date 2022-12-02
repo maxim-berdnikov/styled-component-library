@@ -1,0 +1,43 @@
+.animated-dot-loader {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(to top, transparent 40%, #7fee51);
+  animation: rotateLoader 1s linear infinite;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 22px;
+    left: 0;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 80px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: #7fee51;
+    box-shadow: 0 0 5px #7fee51,
+                0 0 30px #7fee51,
+                0 0 30px #7fee51,
+                0 0 100px #7fee51,
+                0 0 100px #7fee51,
+  }
+}
+
+@keyframes rotateLoader {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
