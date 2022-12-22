@@ -9,7 +9,7 @@ export const Menu = ({
 }): JSX.Element => {
   return (
     <div className="menu">
-      {DB.map((item) => (
+      {DB.sort((a, b) => a.title.localeCompare(b.title)).map((item) => (
         <p
           key={item.title}
           className="menu__item"
