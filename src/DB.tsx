@@ -8,6 +8,7 @@ import {
   Unfold,
   AnimatedLoader,
   AnimatedDotLoader,
+  GradientBar,
 } from "Components";
 
 export const DB = [
@@ -46,5 +47,9 @@ export const DB = [
   {
     title: "Animated Dot Loader",
     component: <AnimatedDotLoader />,
+  },
+  {
+    title: "Gradient Bar",
+    component: <GradientBar />,
   },
 ];
