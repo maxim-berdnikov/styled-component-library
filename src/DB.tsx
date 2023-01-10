@@ -9,6 +9,7 @@ import {
   AnimatedLoader,
   AnimatedDotLoader,
   GradientBar,
+  GradientBorder,
 } from "Components";
 
 export const DB = [
@@ -51,5 +52,9 @@ export const DB = [
   {
     title: "Gradient Bar",
     component: <GradientBar />,
+  },
+  {
+    title: "Gradient Border",
+    component: <GradientBorder />,
   },
 ];

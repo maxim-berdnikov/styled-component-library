@@ -8,3 +8,4 @@ export { Unfold } from "Components/Unfold";
 export { AnimatedLoader } from "Components/AnimatedLoader";
 export { AnimatedDotLoader } from "Components/AnimatedDotLoader";
 export { GradientBar } from "Components/GradientBar";
+export { GradientBorder } from "Components/GradientBorder";
