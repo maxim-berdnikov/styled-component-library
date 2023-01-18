@@ -1,0 +1,100 @@
+
+
+.nine-dots-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #161a23;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.navigation div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7px;
+  height: 7px;
+  background-color: #ffffff;
+  transform: translate(calc(14px * var(--x)), calc(14px * var(--y)));
+  transition: transform 500ms, width 500ms, height 500ms, background-color 500ms;
+  transition-delay: calc(100ms * var(--i));
+}
+
+.navigation div ion-icon {
+  transition: 500ms;
+  font-size: 0em;
+  color: #ffffff;
+}
+
+.navigation.active div ion-icon {
+  font-size: 1.35em;
+}
+
+.navigation.active div {
+  width: 45px;
+  height: 45px;
+  background-color: #1f2536;
+  transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+}
+
+.navigation.active div:hover ion-icon {
+  color: #2dfc52;
+  filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52)
+    drop-shadow(0 0 15px #2dfc52);
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7px;
+  height: 7px;
+  background-color: #ffffff;
+  transition: 500ms;
+  transition-delay: 400ms;
+  pointer-events: none;
+}
+
+.active ~ .close {
+  width: 40px;
+  height: 40px;
+  background-color: #2dfc52;
+  transition-delay: 800ms;
+  pointer-events: initial;
+  cursor: pointer;
+}
+
+.close ion-icon {
+  font-size: 2em;
+  scale: 0;
+  color: #10131c;
+  transition: 500ms;
+}
+
+.active ~ .close ion-icon {
+  scale: 1;
+  transition-delay: 1s;
+}

@@ -11,6 +11,7 @@ import {
   GradientBar,
   GradientBorder,
 } from "Components";
+import { NineDotsMenu } from "Components/NineDotsMenu";
 
 export const DB = [
   {
@@ -57,4 +58,5 @@ export const DB = [
     title: "Gradient Border",
     component: <GradientBorder />,
   },
+  { title: "Nine Dots Menu", component: <NineDotsMenu /> },
 ];
