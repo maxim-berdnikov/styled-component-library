@@ -7,14 +7,6 @@ import "./style.scss";
 export const NineDotsMenu = (): JSX.Element => {
   const [isActive, setIsActive] = useState(false);
 
-  // nav.addEventListener("click", () => {
-  //   nav.classList.add("active");
-  // });
-
-  // close.addEventListener("click", () => {
-  //   nav.classList.remove("active");
-  // });
-
   const handleToggleActive = (status: boolean) => setIsActive(status);
 
   return (
