@@ -11,6 +11,7 @@ export const Menu = ({
     <div className="menu">
       {DB.map((item) => (
         <p
+          key={item.title}
           className="menu__item"
           onClick={() => handleClickComponent(item.title)}
         >
