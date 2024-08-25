@@ -1,5 +1,3 @@
-
-   
 name: Deploy client
 
 on:
@@ -14,13 +12,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        
+
       - name: Install dependencies
         run: npm install
 
       - name: Build Client
         run: CI=false npm run build
-      
+
       - name: Deploy Client
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -1,19 +1,19 @@
 .wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #250821;
-  }
-  
-  .blob {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    
-    &:nth-child(2) {
-      filter: blur(50px);
-    }
-  }
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #250821;
+}
+
+.blob {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+
+	&:nth-child(2) {
+		filter: blur(50px);
+	}
+}
