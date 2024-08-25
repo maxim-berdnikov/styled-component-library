@@ -4,67 +4,66 @@ $lightBlue: #add8e6;
 $lightGreen: #90ee90;
 
 .spinner {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  font-size: 2rem;
-  animation: text-color 2s ease-in-out infinite;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	font-size: 2rem;
+	animation: text-color 2s ease-in-out infinite;
 
-  &-sector {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 15px solid transparent;
-    mix-blend-mode: overlay; 
-    animation: rotate var(--duration) var(--timing) infinite;
-    pointer-events: none;
+	&-sector {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border: 15px solid transparent;
+		mix-blend-mode: overlay;
+		animation: rotate var(--duration) var(--timing) infinite;
+		pointer-events: none;
 
-    &-red {
-      border-top-color: $ligthCoral;
-      --duration: 1.5s;
-      --timing: ease-in-out;
-    }
-    
-    &-blue {
-      border-left-color: $lightBlue;
-      --duration: 2s;
-      --timing: ease-in;
-    }
-    
-    &-green {
-      border-right-color: $lightGreen;
-      --duration: 2.5s;
-      --timing: ease-out;
-    }
-  }
+		&-red {
+			border-top-color: $ligthCoral;
+			--duration: 1.5s;
+			--timing: ease-in-out;
+		}
+
+		&-blue {
+			border-left-color: $lightBlue;
+			--duration: 2s;
+			--timing: ease-in;
+		}
+
+		&-green {
+			border-right-color: $lightGreen;
+			--duration: 2.5s;
+			--timing: ease-out;
+		}
+	}
 }
 
-
 @keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
+	0% {
+		transform: rotate(0);
+	}
 
-  100% {
-    transform: rotate(360deg);
-  }
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes text-color {
-  0% {
-    color: rgba(0, 0, 0, 1);
-  }
+	0% {
+		color: rgba(0, 0, 0, 1);
+	}
 
-  50% {
-    color: rgba(0, 0, 0, 0.5);
-  }  
+	50% {
+		color: rgba(0, 0, 0, 0.5);
+	}
 
-  100% {
-    color: rgba(0, 0, 0, 1);
-  }
+	100% {
+		color: rgba(0, 0, 0, 1);
+	}
 }
