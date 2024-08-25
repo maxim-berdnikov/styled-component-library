@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ParticlesLoader } from '.'
 
 const meta: Meta<typeof ParticlesLoader> = {
-	title: 'Components/Particles Loader',
+	title: 'Loaders/Particles Loader',
 	component: ParticlesLoader,
 	parameters: {
 		layout: 'fullscreen',

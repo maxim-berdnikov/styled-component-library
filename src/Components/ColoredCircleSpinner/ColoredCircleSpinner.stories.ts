@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ColoredCircleSpinner } from '.'
 
 const meta: Meta<typeof ColoredCircleSpinner> = {
-	title: 'Components/Colored Circle Spinner',
+	title: 'Loaders/Colored Circle Spinner',
 	component: ColoredCircleSpinner,
 }
 
