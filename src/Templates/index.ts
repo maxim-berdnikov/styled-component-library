@@ -1,1 +1,1 @@
-export { Header } from "Templates/Header";
+export { Header } from 'Templates/Header'
